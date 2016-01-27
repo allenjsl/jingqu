@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AliTradeTourOrder.aspx.cs" Inherits="Adpost.YCH.WEB.AliPay.AliTradeTourOrder" %>

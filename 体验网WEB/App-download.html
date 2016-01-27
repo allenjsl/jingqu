@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport"content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> 
+</head>
+<body>
+	<div class="into-box into-box-bg">
+		<div class="into-title"><i class="icon icon-title"></i></div>
+		<div class="into-logo"><i class="icon icon-logo"></i></div>
+		
+		<div class="into-down">
+			<a href="javascript:void(0)" id="AndroidDownload"><img src="css/img/android.png"><p id="AndroidNumber">888次</p></a>
+			<a href="javascript:void(0)" id="IosDownload"><img src="css/img/ios.png"><p id="IosNumber">888次</p></a>
+		</div>
+		<div class="into-text"><p>微信状态下请点击屏幕右上角</p><p>在浏览器中打开后完成安装</p></div>
+		<div class="into-foot"><i class="icon icon-foot"></i></div>
+	</div>
+    <script language="javascript">
+        $(function () {
+            $.ajax({
+                type: "get",
+                cache: false,
+                url: "http://gk.sip-ych.com/ashx/AppViews.ashx?action=getsumviews",
+                dataType: "jsonp",
+                success: function (ret) {
+                    //ajax回发提示
+                    if (ret.isSuc != "0") {
+                        $("#AndroidNumber").text(ret.oData.Android);
+                        $("#IosNumber").text(ret.oData.IOS)
+                    }
+                },
+                error: function () {
+                    //错误
+                    alert("异常！");
+                }
+            });
+        })
+        $("#AndroidDownload").click(function () {
+            $.ajax({
+                type: "get",
+                cache: false,
+                url: "http://gk.sip-ych.com/ashx/AppViews.ashx?action=updateappnum&type=1",
+                dataType: "jsonp",
+                success: function (ret) {
+                    //ajax回发提示
+                    if (ret.isSuc != "0") {
+                        window.open("http://www.sip-ych.com/ych.apk ");
+                    }
+                },
+                error: function () {
+                    //错误
+                    alert("异常！");
+                }
+            });
+        });
+        $("#IosDownload").click(function () {
+            $.ajax({
+                type: "get",
+                cache: false,
+                url: "http://gk.sip-ych.com/ashx/AppViews.ashx?action=updateappnum&type=0",
+                dataType: "jsonp",
+                success: function (ret) {
+                    //ajax回发提示
+                    if (ret.isSuc != "0") {
+                        window.open("http://www.sip-ych.com/ych.ipa");
+                    }
+                },
+                error: function () {
+                    //错误
+                    alert("异常！");
+                }
+            });
+        });             
+    </script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* CSS Document */
+/*行程规划*/
+.inner-wrap{
+	border:1px solid #000;}
+.inner-wrap-icon{
+	background:url(../images/xingcheng-icon1.png) no-repeat 0px 12px;
+	background-size:45px 40px;
+	width:65px;
+	height:56px;
+	}
+.in-banner{
+	width:100%;
+	position:relative;
+	left:0px;
+	}
+.inner-wrap-font{
+	background:url(../images/xingcheng-title.png) no-repeat 51% 15px;
+	background-size:115px 47px;
+	width:100%;
+	height:82px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	}
+.fixed{
+	position: fixed;
+	}
+.main_bg{
+	background:#eee;
+	margin-top:60px;
+	}
+.main_title_icon{
+	width:299px;
+	height:50px;
+	background:url(../images/xingcheng-title1.png) no-repeat 0px 8px;
+	background-size:240px 33px;
+	}
+.main_list1{
+	height:60px;
+	background:#fff;
+	}
+.main_list1,.main_list2{
+	border-bottom:1px solid #ddd;
+	border-top:1px solid #ddd;
+	}
+.main_list1_prev_icon,.main_list2_first_prev_icon,.main_list2_two_prev_icon,.main_list2_three_prev_icon{
+    width:56px;
+	height:60px;
+	}
+.main_list1_next_icon,.main_list3_next_icon{
+	width:50px;
+	height:60px;
+	}
+.main_list1_prev_icon{
+	background:url(../images/xingcheng-list-icon3.png) no-repeat 5px 5px;
+	background-size:55px 57px;
+	}
+.main_list1_prev_icon,.main_list1_content,.main_list2_first_prev_icon,.main_list2_content,.main_list2_two_prev_icon,.main_list2_three_prev_icon{
+	float:left;
+	}
+.main_list1_content,.main_list2_content{
+	font:14px/1 微软雅黑;
+    padding:25px 0 0 10px;
+	color:#000;
+	}
+.main_list_content span,.main_list2_content span{
+	color:#888;
+	font-size:12px;
+	}
+.main_list1_next_icon{
+	float:right;
+	background:url(../images/xingcheng-icon3.png) no-repeat 0px 21px;
+	background-size:25px 20px;
+	cursor:pointer;
+	}
+.main_list3_next_icon{
+	float:right;
+	background:url(../images/xingcheng-icon3.png) no-repeat 0px 21px;
+	background-size:25px 20px;
+	cursor:pointer;
+	}
+.main_list_bottom{
+	margin-bottom:20px;
+	}
+	
+.main_list2{
+	background:#fff;
+	height:180px;
+	display:none;
+	}
+.main_list2 li{
+	height:60px;
+	}
+.main_list2_first_prev_icon{
+	background:url(../images/xingcheng-list-icon.png) no-repeat 10px 10px;
+	background-size:45px 46px;
+	}
+.main_list2_two_prev_icon{
+	background:url(../images/xingcheng-list-icon2.png) no-repeat 10px 10px;
+	background-size:45px 46px;
+	}
+.main_list2_three_prev_icon{
+	background:url(../images/xingchenglist-icon1.png) no-repeat 10px 10px;
+	background-size:45px 46px;
+	}
+.border_bottom{
+	border-bottom:1px solid #ddd;
+	clear:both;
+	margin-left:65px;
+	}
