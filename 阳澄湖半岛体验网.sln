@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adpost.YCH.BLL", "Adpost.YCH.BLL\Adpost.YCH.BLL.csproj", "{583E363B-3C5D-4111-B97A-C92FCBEB2B3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adpost.YCH.Model", "Adpost.YCH.Model\Adpost.YCH.Model.csproj", "{82B25D1A-FB54-4E31-8AA0-32D4608B735B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "体验网英文WEB", "体验网英文WEB\体验网英文WEB.csproj", "{D7CE23C6-0FAE-429C-82CD-395F69EF23B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "体验网韩文WEB", "体验网韩文WEB\体验网韩文WEB.csproj", "{8E6CD13B-3C67-4102-826B-5190AB6BDE11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "体验网WEB", "体验网WEB\体验网WEB.csproj", "{830FDCB6-8446-4C92-90E1-C18FDCEDCDF2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "体验网日文WEB", "体验网日文WEB\体验网日文WEB.csproj", "{2F1A45E0-6706-4113-85E4-7F4863DA3495}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "微信WAP", "微信WAP\微信WAP.csproj", "{4C71E3B3-6F3E-4171-803A-D5292C321679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "体验网WAP", "体验网WAP\体验网WAP.csproj", "{7DE8201C-D7B7-4E4B-9AE0-CC03334E4AE5}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 9
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Adpost.YCH.BLL\\Adpost.YCH.BLL.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = Adpost.YCH.BLL\\
+		SccProjectUniqueName2 = Adpost.YCH.Model\\Adpost.YCH.Model.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Adpost.YCH.Model\\
+		SccProjectUniqueName3 = 体验网WAP\\体验网WAP.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = 体验网WAP\\
+		SccProjectUniqueName4 = 体验网WEB\\体验网WEB.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = 体验网WEB\\
+		SccProjectUniqueName5 = 体验网日文WEB\\体验网日文WEB.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = 体验网日文WEB\\
+		SccProjectUniqueName6 = 体验网英文WEB\\体验网英文WEB.csproj
+		SccLocalPath6 = .
+		SccProjectFilePathRelativizedFromConnection6 = 体验网英文WEB\\
+		SccProjectUniqueName7 = 体验网韩文WEB\\体验网韩文WEB.csproj
+		SccLocalPath7 = .
+		SccProjectFilePathRelativizedFromConnection7 = 体验网韩文WEB\\
+		SccProjectUniqueName8 = 微信WAP\\微信WAP.csproj
+		SccLocalPath8 = .
+		SccProjectFilePathRelativizedFromConnection8 = 微信WAP\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{583E363B-3C5D-4111-B97A-C92FCBEB2B3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{583E363B-3C5D-4111-B97A-C92FCBEB2B3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{583E363B-3C5D-4111-B97A-C92FCBEB2B3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{583E363B-3C5D-4111-B97A-C92FCBEB2B3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82B25D1A-FB54-4E31-8AA0-32D4608B735B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82B25D1A-FB54-4E31-8AA0-32D4608B735B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82B25D1A-FB54-4E31-8AA0-32D4608B735B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82B25D1A-FB54-4E31-8AA0-32D4608B735B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7CE23C6-0FAE-429C-82CD-395F69EF23B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7CE23C6-0FAE-429C-82CD-395F69EF23B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7CE23C6-0FAE-429C-82CD-395F69EF23B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7CE23C6-0FAE-429C-82CD-395F69EF23B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E6CD13B-3C67-4102-826B-5190AB6BDE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6CD13B-3C67-4102-826B-5190AB6BDE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6CD13B-3C67-4102-826B-5190AB6BDE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6CD13B-3C67-4102-826B-5190AB6BDE11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830FDCB6-8446-4C92-90E1-C18FDCEDCDF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830FDCB6-8446-4C92-90E1-C18FDCEDCDF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830FDCB6-8446-4C92-90E1-C18FDCEDCDF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830FDCB6-8446-4C92-90E1-C18FDCEDCDF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F1A45E0-6706-4113-85E4-7F4863DA3495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F1A45E0-6706-4113-85E4-7F4863DA3495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F1A45E0-6706-4113-85E4-7F4863DA3495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F1A45E0-6706-4113-85E4-7F4863DA3495}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C71E3B3-6F3E-4171-803A-D5292C321679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C71E3B3-6F3E-4171-803A-D5292C321679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C71E3B3-6F3E-4171-803A-D5292C321679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C71E3B3-6F3E-4171-803A-D5292C321679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DE8201C-D7B7-4E4B-9AE0-CC03334E4AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE8201C-D7B7-4E4B-9AE0-CC03334E4AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE8201C-D7B7-4E4B-9AE0-CC03334E4AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE8201C-D7B7-4E4B-9AE0-CC03334E4AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

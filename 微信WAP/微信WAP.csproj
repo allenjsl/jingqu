@@ -1,0 +1,1119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4C71E3B3-6F3E-4171-803A-D5292C321679}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Adpost.YCH.WAP</RootNamespace>
+    <AssemblyName>Adpost.YCH.WAP</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adpost.Common.License">
+      <HintPath>..\OpenSource\Adpost.Common.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Adpost.YCH.Utility">
+      <HintPath>..\OpenSource\Adpost.YCH.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="AlipayLibrary">
+      <HintPath>..\OpenSource\AlipayLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core">
+      <HintPath>..\OpenSource\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Common, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2">
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth2.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.AuthorizationServer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth2.AuthorizationServer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.Client">
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth2.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.ClientAuthorization">
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth2.ClientAuthorization.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth2.ResourceServer, Version=4.3.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\DotNetOpenAuth.OAuth2.ResourceServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="YCH.DataCenter.DTO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\YCH.DataCenter.DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="ZFramework, Version=2.0.1.15, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\OpenSource\ZFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Alipay\call_back_url.aspx" />
+    <Content Include="Alipay\default.aspx" />
+    <Content Include="Alipay\notify_url.aspx" />
+    <Content Include="CommonPage\membercard.jpg" />
+    <Content Include="css\common.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\swfupload\default.css" />
+    <Content Include="css\xingcheng-list.css" />
+    <Content Include="css\xingchengdingzhi.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="images\2014-07-30_145718.jpg" />
+    <Content Include="images\android.png" />
+    <Content Include="images\app01.jpg" />
+    <Content Include="images\app03.jpg" />
+    <Content Include="images\app04.jpg" />
+    <Content Include="images\app05.jpg" />
+    <Content Include="images\bowuguan.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\copyright_logo_s %281%29.png" />
+    <Content Include="images\copyright_logo_s.png" />
+    <Content Include="images\dangqian.png" />
+    <Content Include="images\dianxingongsi.png" />
+    <Content Include="images\dingzhi_img1.png" />
+    <Content Include="images\ditie_hangzhou_1.png" />
+    <Content Include="images\dujiachun.png" />
+    <Content Include="images\fengjing.png" />
+    <Content Include="images\gaikuang_banner.jpg" />
+    <Content Include="images\gaodengjiaoyu.png" />
+    <Content Include="images\gongshangyinhang.png" />
+    <Content Include="images\gongyuan.png" />
+    <Content Include="images\gouwu_banner.jpg" />
+    <Content Include="images\guide.png" />
+    <Content Include="images\guide_1.png" />
+    <Content Include="images\guide_2.png" />
+    <Content Include="images\guide_3.png" />
+    <Content Include="images\guji.png" />
+    <Content Include="images\hd_user.jpg" />
+    <Content Include="images\huaxiayinhang.png" />
+    <Content Include="images\huodong_banner.jpg" />
+    <Content Include="images\icons14.png" />
+    <Content Include="images\icons15.png" />
+    <Content Include="images\icons22.png" />
+    <Content Include="images\icons3.png" />
+    <Content Include="images\icons31.png" />
+    <Content Include="images\icons33.png" />
+    <Content Include="images\icons34.png" />
+    <Content Include="images\icons35.png" />
+    <Content Include="images\icons36.png" />
+    <Content Include="images\icon_set.png" />
+    <Content Include="images\icon_share.png" />
+    <Content Include="images\img_comingsoon.png" />
+    <Content Include="images\img_food.jpg" />
+    <Content Include="images\img_hd1.jpg" />
+    <Content Include="images\img_hd2.jpg" />
+    <Content Include="images\img_hd3.jpg" />
+    <Content Include="images\img_hd4.jpg" />
+    <Content Include="images\img_hd5.jpg" />
+    <Content Include="images\img_hd6.jpg" />
+    <Content Include="images\img_huodong1.jpg" />
+    <Content Include="images\img_huodong2.jpg" />
+    <Content Include="images\img_huodong3.jpg" />
+    <Content Include="images\img_huodong4.jpg" />
+    <Content Include="images\img_jingdian1.jpg" />
+    <Content Include="images\img_share.html" />
+    <Content Include="images\img_share.jpg" />
+    <Content Include="images\img_zixun.jpg" />
+    <Content Include="images\index_img.jpg" />
+    <Content Include="images\ios.png" />
+    <Content Include="images\jiaotong_banner.jpg" />
+    <Content Include="images\jiaotonyinhang.png" />
+    <Content Include="images\jingdian.png" />
+    <Content Include="images\jingdian_banner.jpg" />
+    <Content Include="images\jingdian_map.jpg" />
+    <Content Include="images\jingdian_slide1.jpg" />
+    <Content Include="images\jiudian_banner.jpg" />
+    <Content Include="images\meishi_banner.jpg" />
+    <Content Include="images\MemberCard.jpg" />
+    <Content Include="images\membercard.png" />
+    <Content Include="images\membercard1.png" />
+    <Content Include="images\member_collect_icon4.png" />
+    <Content Include="images\minshengyinhang.png" />
+    <Content Include="images\nongyeyinhang.png" />
+    <Content Include="images\onCorrect.gif" />
+    <Content Include="images\onError.gif" />
+    <Content Include="images\onFocus.gif" />
+    <Content Include="images\open.png" />
+    <Content Include="images\paidui_img1.png" />
+    <Content Include="images\password.png" />
+    <Content Include="images\qd1.png" />
+    <Content Include="images\qd2.png" />
+    <Content Include="images\qita.png" />
+    <Content Include="images\recommendConListIcon_1.png" />
+    <Content Include="images\recommendConListIcon_2.png" />
+    <Content Include="images\recommendConListIcon_4.png" />
+    <Content Include="images\recommendConListIcon_5.png" />
+    <Content Include="images\recommendConListIcon_6.png" />
+    <Content Include="images\recommendConListIcon_7.png" />
+    <Content Include="images\recommendContainerIcon_1_11.png" />
+    <Content Include="images\recommendPopCloseIcon_11.png" />
+    <Content Include="images\return_coin.jpg" />
+    <Content Include="images\shangwudasha.png" />
+    <Content Include="images\tehui_banner.jpg" />
+    <Content Include="images\theme_btn4.png" />
+    <Content Include="images\th_img1.png" />
+    <Content Include="images\tishi.png" />
+    <Content Include="images\tiyu.png" />
+    <Content Include="images\topclumbRecommendIcon_03.gif" />
+    <Content Include="images\travel_raiders_text_btn1.jpg" />
+    <Content Include="images\user.jpg" />
+    <Content Include="images\username.png" />
+    <Content Include="images\user_bg.jpg" />
+    <Content Include="images\xianlu_banner.jpg" />
+    <Content Include="images\xiaoxue_loupan.png" />
+    <Content Include="images\xingcheng-1.jpg" />
+    <Content Include="images\xingcheng-2.jpg" />
+    <Content Include="images\xingcheng-3.jpg" />
+    <Content Include="images\xingcheng-4.jpg" />
+    <Content Include="images\xingcheng-5.png" />
+    <Content Include="images\xingcheng-icon3.png" />
+    <Content Include="images\xingcheng-icon4.png" />
+    <Content Include="images\xingcheng-list-icon.png" />
+    <Content Include="images\xingcheng-list-icon2.png" />
+    <Content Include="images\xingcheng-list-icon3.png" />
+    <Content Include="images\xingcheng-re.png" />
+    <Content Include="images\xingcheng-title.png" />
+    <Content Include="images\xingcheng-title0.png" />
+    <Content Include="images\xingcheng-title1.png" />
+    <Content Include="images\xingchenglist-icon1.png" />
+    <Content Include="images\xny.jpg" />
+    <Content Include="images\ych_icon.png" />
+    <Content Include="images\ych_icon1.png" />
+    <Content Include="images\yinghang.png" />
+    <Content Include="images\yule_banner.jpg" />
+    <Content Include="images\zhongcan_a.png" />
+    <Content Include="images\zhongheyiyuan_1.png" />
+    <Content Include="images\zhongxiaoxue.png" />
+    <Content Include="images\zhongyangjigou.png" />
+    <Content Include="images\下载 %281%29.png" />
+    <Content Include="images\下载.png" />
+    <Content Include="Install\Install.aspx" />
+    <Content Include="Install\SystemExpired.aspx" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery-1.6.1.min.js" />
+    <Content Include="js\MyCxcPlug.js" />
+    <Content Include="js\swfupload\handlers.js" />
+    <Content Include="js\swfupload\swfupload.js" />
+    <Content Include="js\swfupload\swfupload.swf" />
+    <Content Include="js\swfupload\swfupload.swfobject.js" />
+    <Content Include="js\utils.js" />
+    <Content Include="js\xingchengdingzhi.js" />
+    <Content Include="js\zepto.js" />
+    <Content Include="js\zepto.min.js" />
+    <Content Include="Map\css\map.css" />
+    <Content Include="Map\css\reset.css" />
+    <Content Include="Map\Default.aspx" />
+    <Content Include="Map\images\1.jpg" />
+    <Content Include="Map\images\base_z209e63.png" />
+    <Content Include="Map\images\bg.png" />
+    <Content Include="Map\images\icon.png" />
+    <Content Include="Map\images\ico_mylocation.png" />
+    <Content Include="Map\images\pic.png" />
+    <Content Include="Map\images\tel.png" />
+    <Content Include="Map\map.aspx" />
+    <Content Include="Map\mapapi_3.12.15.js" />
+    <Content Include="Map\mapconfig.txt" />
+    <Content Include="Map\mapfiles\api-3\12\15\common.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\controls.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\directions.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\distance_matrix.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\drawing.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\drawing_impl.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\elevation.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\geocoder.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\geometry.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\infowindow.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\kml.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\layers.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\main.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\map.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\marker.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\maxzoom.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\onion.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\overlay.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\places.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\places_impl.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\poly.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\search_impl.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\stats.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\usage.js" />
+    <Content Include="Map\mapfiles\api-3\12\15\util.js" />
+    <Content Include="Map\mapfiles\arrow-down.png" />
+    <Content Include="Map\mapfiles\cb\mod_cb_scout\cb_scout_sprite_api_003.png" />
+    <Content Include="Map\mapfiles\closedhand_8_8.cur" />
+    <Content Include="Map\mapfiles\crosshair.cur" />
+    <Content Include="Map\mapfiles\drag_cross_67_16.png" />
+    <Content Include="Map\mapfiles\drawing.png" />
+    <Content Include="Map\mapfiles\google_white.png" />
+    <Content Include="Map\mapfiles\iw3.png" />
+    <Content Include="Map\mapfiles\iw_close.gif" />
+    <Content Include="Map\mapfiles\iw_minus.gif" />
+    <Content Include="Map\mapfiles\iw_plus.gif" />
+    <Content Include="Map\mapfiles\mapapi_3.12.15.js" />
+    <Content Include="Map\mapfiles\mapcontrols3d7.png" />
+    <Content Include="Map\mapfiles\markers2\beachflag.png" />
+    <Content Include="Map\mapfiles\markers2\d_135.png" />
+    <Content Include="Map\mapfiles\markers2\d_180.png" />
+    <Content Include="Map\mapfiles\markers2\d_225.png" />
+    <Content Include="Map\mapfiles\markers2\d_270.png" />
+    <Content Include="Map\mapfiles\markers2\d_315.png" />
+    <Content Include="Map\mapfiles\markers2\d_360.png" />
+    <Content Include="Map\mapfiles\markers2\d_3610.png" />
+    <Content Include="Map\mapfiles\markers2\d_45.png" />
+    <Content Include="Map\mapfiles\markers2\d_90.png" />
+    <Content Include="Map\mapfiles\markers2\green-dot.png" />
+    <Content Include="Map\mapfiles\markers2\marker_sprite.png" />
+    <Content Include="Map\mapfiles\markers2\mobilephonetower.png" />
+    <Content Include="Map\mapfiles\markers2\red-dot.png" />
+    <Content Include="Map\mapfiles\mv\imgs8.png" />
+    <Content Include="Map\mapfiles\openhand_8_8.cur" />
+    <Content Include="Map\mapfiles\rotate2.png" />
+    <Content Include="Map\mapfiles\szc4.png" />
+    <Content Include="Map\mapfiles\transparent.png" />
+    <Content Include="Map\mapfiles\undo_poly.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebControls\UploadControl.ascx" />
+    <Content Include="WEB\App-download.html" />
+    <Content Include="WEB\bandao-gaikuang.aspx" />
+    <Content Include="WEB\bandao-gouwu.aspx" />
+    <Content Include="WEB\bandao-gouwu1.aspx" />
+    <Content Include="WEB\bandao-huodong.aspx" />
+    <Content Include="WEB\bandao-huodongend.aspx" />
+    <Content Include="WEB\bandao-jiaotong.aspx" />
+    <Content Include="WEB\bandao-jingdian.aspx" />
+    <Content Include="WEB\bandao-jingdian1.aspx" />
+    <Content Include="WEB\bandao-jiudian.aspx" />
+    <Content Include="WEB\bandao-jiudian1.aspx" />
+    <Content Include="WEB\bandao-meishi.aspx" />
+    <Content Include="WEB\bandao-meishi1.aspx" />
+    <Content Include="WEB\bandao-xianlu1.aspx" />
+    <Content Include="WEB\bandao-xianluview.aspx" />
+    <Content Include="WEB\bandao-yule.aspx" />
+    <Content Include="WEB\bandao-yule1.aspx" />
+    <Content Include="WEB\fmNav.aspx" />
+    <Content Include="WEB\gonglve-list.aspx" />
+    <Content Include="WEB\gouwu-view.aspx" />
+    <Content Include="WEB\hudong-fabiao.aspx" />
+    <Content Include="WEB\hudong-list.aspx" />
+    <Content Include="WEB\hudong-share.aspx" />
+    <Content Include="WEB\huodong-view.aspx" />
+    <Content Include="WEB\huodong_baoming.aspx" />
+    <Content Include="WEB\images\2014-07-30_145718.jpg" />
+    <Content Include="WEB\images\android.png" />
+    <Content Include="WEB\images\app01.jpg" />
+    <Content Include="WEB\images\app03.jpg" />
+    <Content Include="WEB\images\app04.jpg" />
+    <Content Include="WEB\images\app05.jpg" />
+    <Content Include="WEB\images\bowuguan.png" />
+    <Content Include="WEB\images\cesuo.jpg" />
+    <Content Include="WEB\images\cesuo.png" />
+    <Content Include="WEB\images\chi.jpg" />
+    <Content Include="WEB\images\copyright_logo_s %281%29.png" />
+    <Content Include="WEB\images\copyright_logo_s.png" />
+    <Content Include="WEB\images\dangqian.png" />
+    <Content Include="WEB\images\dianxingongsi.png" />
+    <Content Include="WEB\images\dingzhi_img1.png" />
+    <Content Include="WEB\images\ditie_hangzhou_1.png" />
+    <Content Include="WEB\images\dujiachun.png" />
+    <Content Include="WEB\images\fengjing.png" />
+    <Content Include="WEB\images\gaikuang_banner.jpg" />
+    <Content Include="WEB\images\gaodengjiaoyu.png" />
+    <Content Include="WEB\images\gongshangyinhang.png" />
+    <Content Include="WEB\images\gongyuan.png" />
+    <Content Include="WEB\images\gou.jpg" />
+    <Content Include="WEB\images\gouwu.png" />
+    <Content Include="WEB\images\gouwu_banner.jpg" />
+    <Content Include="WEB\images\guide.png" />
+    <Content Include="WEB\images\guide_1.png" />
+    <Content Include="WEB\images\guide_2.png" />
+    <Content Include="WEB\images\guide_3.png" />
+    <Content Include="WEB\images\guji.png" />
+    <Content Include="WEB\images\hd_user.jpg" />
+    <Content Include="WEB\images\huaxiayinhang.png" />
+    <Content Include="WEB\images\huodong_banner.jpg" />
+    <Content Include="WEB\images\icons14.png" />
+    <Content Include="WEB\images\icons15.png" />
+    <Content Include="WEB\images\icons22.png" />
+    <Content Include="WEB\images\icons3.png" />
+    <Content Include="WEB\images\icons31.png" />
+    <Content Include="WEB\images\icons33.png" />
+    <Content Include="WEB\images\icons34.png" />
+    <Content Include="WEB\images\icons35.png" />
+    <Content Include="WEB\images\icons36.png" />
+    <Content Include="WEB\images\icon_set.png" />
+    <Content Include="WEB\images\icon_share.png" />
+    <Content Include="WEB\images\img_food.jpg" />
+    <Content Include="WEB\images\img_hd1.jpg" />
+    <Content Include="WEB\images\img_hd2.jpg" />
+    <Content Include="WEB\images\img_hd3.jpg" />
+    <Content Include="WEB\images\img_hd4.jpg" />
+    <Content Include="WEB\images\img_hd5.jpg" />
+    <Content Include="WEB\images\img_hd6.jpg" />
+    <Content Include="WEB\images\img_huodong1.jpg" />
+    <Content Include="WEB\images\img_huodong2.jpg" />
+    <Content Include="WEB\images\img_huodong3.jpg" />
+    <Content Include="WEB\images\img_huodong4.jpg" />
+    <Content Include="WEB\images\img_jingdian1.jpg" />
+    <Content Include="WEB\images\img_share.html" />
+    <Content Include="WEB\images\img_share.jpg" />
+    <Content Include="WEB\images\img_zixun.jpg" />
+    <Content Include="WEB\images\index_img.jpg" />
+    <Content Include="WEB\images\ios.png" />
+    <Content Include="WEB\images\jiaotong_banner.jpg" />
+    <Content Include="WEB\images\jiaotonyinhang.png" />
+    <Content Include="WEB\images\jingdian.png" />
+    <Content Include="WEB\images\jingdian_banner.jpg" />
+    <Content Include="WEB\images\jingdian_map.jpg" />
+    <Content Include="WEB\images\jingdian_slide1.jpg" />
+    <Content Include="WEB\images\jiudian_banner.jpg" />
+    <Content Include="WEB\images\meishi.png" />
+    <Content Include="WEB\images\meishi_banner.jpg" />
+    <Content Include="WEB\images\MemberCard.jpg" />
+    <Content Include="WEB\images\membercard.png" />
+    <Content Include="WEB\images\membercard1.png" />
+    <Content Include="WEB\images\member_collect_icon4.png" />
+    <Content Include="WEB\images\minshengyinhang.png" />
+    <Content Include="WEB\images\nongyeyinhang.png" />
+    <Content Include="WEB\images\onCorrect.gif" />
+    <Content Include="WEB\images\onError.gif" />
+    <Content Include="WEB\images\onFocus.gif" />
+    <Content Include="WEB\images\paidui_img1.png" />
+    <Content Include="WEB\images\password.png" />
+    <Content Include="WEB\images\qita.png" />
+    <Content Include="WEB\images\recommendConListIcon_1.png" />
+    <Content Include="WEB\images\recommendConListIcon_2.png" />
+    <Content Include="WEB\images\recommendConListIcon_4.png" />
+    <Content Include="WEB\images\recommendConListIcon_5.png" />
+    <Content Include="WEB\images\recommendConListIcon_6.png" />
+    <Content Include="WEB\images\recommendConListIcon_7.png" />
+    <Content Include="WEB\images\recommendContainerIcon_1_11.png" />
+    <Content Include="WEB\images\recommendPopCloseIcon_11.png" />
+    <Content Include="WEB\images\return_coin.jpg" />
+    <Content Include="WEB\images\shangwudasha.png" />
+    <Content Include="WEB\images\tehui_banner.jpg" />
+    <Content Include="WEB\images\theme_btn4.png" />
+    <Content Include="WEB\images\th_img1.png" />
+    <Content Include="WEB\images\tishi.png" />
+    <Content Include="WEB\images\tiyu.png" />
+    <Content Include="WEB\images\topclumbRecommendIcon_03.gif" />
+    <Content Include="WEB\images\travel_raiders_text_btn1.jpg" />
+    <Content Include="WEB\images\user.jpg" />
+    <Content Include="WEB\images\username.png" />
+    <Content Include="WEB\images\user_bg.jpg" />
+    <Content Include="WEB\images\xianlu_banner.jpg" />
+    <Content Include="WEB\images\xiaoxue_loupan.png" />
+    <Content Include="WEB\images\xing.jpg" />
+    <Content Include="WEB\images\xingcheng-1.jpg" />
+    <Content Include="WEB\images\xingcheng-2.jpg" />
+    <Content Include="WEB\images\xingcheng-3.jpg" />
+    <Content Include="WEB\images\xingcheng-4.jpg" />
+    <Content Include="WEB\images\xingcheng-5.png" />
+    <Content Include="WEB\images\xingcheng-icon3.png" />
+    <Content Include="WEB\images\xingcheng-icon4.png" />
+    <Content Include="WEB\images\xingcheng-list-icon.png" />
+    <Content Include="WEB\images\xingcheng-list-icon2.png" />
+    <Content Include="WEB\images\xingcheng-list-icon3.png" />
+    <Content Include="WEB\images\xingcheng-re.png" />
+    <Content Include="WEB\images\xingcheng-title.png" />
+    <Content Include="WEB\images\xingcheng-title0.png" />
+    <Content Include="WEB\images\xingcheng-title1.png" />
+    <Content Include="WEB\images\xingchenglist-icon1.png" />
+    <Content Include="WEB\images\xny.jpg" />
+    <Content Include="WEB\images\ych_icon.png" />
+    <Content Include="WEB\images\ych_icon1.png" />
+    <Content Include="WEB\images\yinghang.png" />
+    <Content Include="WEB\images\yu.jpg" />
+    <Content Include="WEB\images\yule.png" />
+    <Content Include="WEB\images\yule_banner.jpg" />
+    <Content Include="WEB\images\zhongcan_a.png" />
+    <Content Include="WEB\images\zhongheyiyuan_1.png" />
+    <Content Include="WEB\images\zhongxiaoxue.png" />
+    <Content Include="WEB\images\zhongyangjigou.png" />
+    <Content Include="WEB\images\zhu.jpg" />
+    <Content Include="WEB\images\zhusu.png" />
+    <Content Include="WEB\images\下载 %281%29.png" />
+    <Content Include="WEB\images\下载.png" />
+    <Content Include="WEB\index.aspx" />
+    <Content Include="WEB\jfList.aspx" />
+    <Content Include="WEB\jifen.aspx" />
+    <Content Include="WEB\jingdian-comment.aspx" />
+    <Content Include="WEB\jingdian-map.aspx" />
+    <Content Include="WEB\jingdian-raider.aspx" />
+    <Content Include="WEB\jingdian-share.aspx" />
+    <Content Include="WEB\jingdian-view.aspx" />
+    <Content Include="WEB\jiudian-comment.aspx" />
+    <Content Include="WEB\jiudian-map.aspx" />
+    <Content Include="WEB\jiudian-room.aspx" />
+    <Content Include="WEB\jiudian-share.aspx" />
+    <Content Include="WEB\jiudian-view.aspx" />
+    <Content Include="WEB\Login.aspx" />
+    <Content Include="WEB\login1.aspx" />
+    <Content Include="WEB\login_find.aspx" />
+    <Content Include="WEB\login_find_pwd.aspx" />
+    <Content Include="WEB\Logout.aspx" />
+    <Content Include="WEB\map.aspx" />
+    <Content Include="WEB\map.html" />
+    <Content Include="WEB\meishi-view.aspx" />
+    <Content Include="WEB\member_collect_del.aspx" />
+    <Content Include="WEB\Member_Order_Del.aspx" />
+    <Content Include="WEB\nav.aspx" />
+    <Content Include="WEB\notice-list.aspx" />
+    <Content Include="WEB\paidui.aspx" />
+    <Content Include="WEB\register.aspx" />
+    <Content Include="WEB\register1.aspx" />
+    <Content Include="WEB\RegistrationIt.aspx" />
+    <Content Include="WEB\tehui-list.aspx" />
+    <Content Include="WEB\tehui-view.aspx" />
+    <Content Include="WEB\tjNav.aspx" />
+    <Content Include="WEB\tuijian.aspx" />
+    <Content Include="WEB\TUrl.aspx" />
+    <Content Include="WEB\user-center.aspx" />
+    <Content Include="WEB\user-dd.aspx" />
+    <Content Include="WEB\user-dd2.aspx" />
+    <Content Include="WEB\user-gy.aspx" />
+    <Content Include="WEB\user-info.aspx" />
+    <Content Include="WEB\user-info_Upload.aspx" />
+    <Content Include="WEB\user-sc-mod.aspx" />
+    <Content Include="WEB\user-sc.aspx" />
+    <Content Include="WEB\user-xl-mod.aspx" />
+    <Content Include="WEB\user-xl.aspx" />
+    <Content Include="WEB\user-yhj-mod.aspx" />
+    <Content Include="WEB\user-yhj.aspx" />
+    <Content Include="WEB\user-yj-mod.aspx" />
+    <Content Include="WEB\user-yj.aspx" />
+    <Content Include="WEB\visitor-cjwt.aspx" />
+    <Content Include="WEB\visitor-tsjy.aspx" />
+    <Content Include="WEB\visitor-tsjyview.aspx" />
+    <Content Include="WEB\visitor-wjdc.aspx" />
+    <Content Include="WEB\visitor-wjdcview.aspx" />
+    <Content Include="WEB\visitor-zbxx.aspx" />
+    <Content Include="WEB\visitor.aspx" />
+    <Content Include="WEB\weather.aspx" />
+    <Content Include="WEB\WxLogin.aspx" />
+    <Content Include="WEB\xianlu_view.aspx" />
+    <Content Include="WEB\xingcheng-list.aspx" />
+    <Content Include="WEB\xingchengdingzhi.aspx" />
+    <Content Include="WEB\youji-list.aspx" />
+    <Content Include="WEB\youji-view.aspx" />
+    <Content Include="WEB\yule_view.aspx" />
+    <Content Include="WEB\zixun-list.aspx" />
+    <Content Include="WEB\zixun-view.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Alipay\call_back_url.aspx.cs">
+      <DependentUpon>call_back_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay\call_back_url.aspx.designer.cs">
+      <DependentUpon>call_back_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alipay\default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay\default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alipay\notify_url.aspx.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alipay\notify_url.aspx.designer.cs">
+      <DependentUpon>notify_url.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BasePage\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CommonPage\GetVipCard.ashx.cs">
+      <DependentUpon>GetVipCard.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ClientAuthorization\ClientAuthorization.cs" />
+    <Compile Include="Common\ClientAuthorization\ClientAuthorizationCode.cs" />
+    <Compile Include="Common\ClientAuthorization\ClientAuthorizationStartegyBase.cs" />
+    <Compile Include="Common\ClientAuthorization\ClientCredentialsGrant.cs" />
+    <Compile Include="Common\ClientAuthorization\IClientAuthorization.cs" />
+    <Compile Include="Common\ClientAuthorization\OAuthHttpClient.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\MailSend.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\Install.aspx.cs">
+      <DependentUpon>Install.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\Install.aspx.designer.cs">
+      <DependentUpon>Install.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Install\SystemExpired.aspx.cs">
+      <DependentUpon>SystemExpired.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Install\SystemExpired.aspx.designer.cs">
+      <DependentUpon>SystemExpired.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Map\map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Map\map.aspx.designer.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebControls\UploadControl.ascx.cs">
+      <DependentUpon>UploadControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebControls\UploadControl.ascx.designer.cs">
+      <DependentUpon>UploadControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-gaikuang.aspx.cs">
+      <DependentUpon>bandao-gaikuang.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-gaikuang.aspx.designer.cs">
+      <DependentUpon>bandao-gaikuang.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-gouwu.aspx.cs">
+      <DependentUpon>bandao-gouwu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-gouwu.aspx.designer.cs">
+      <DependentUpon>bandao-gouwu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-gouwu1.aspx.cs">
+      <DependentUpon>bandao-gouwu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-gouwu1.aspx.designer.cs">
+      <DependentUpon>bandao-gouwu1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-huodong.aspx.cs">
+      <DependentUpon>bandao-huodong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-huodong.aspx.designer.cs">
+      <DependentUpon>bandao-huodong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-huodongend.aspx.cs">
+      <DependentUpon>bandao-huodongend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-huodongend.aspx.designer.cs">
+      <DependentUpon>bandao-huodongend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-jingdian.aspx.cs">
+      <DependentUpon>bandao-jingdian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-jingdian.aspx.designer.cs">
+      <DependentUpon>bandao-jingdian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-jingdian1.aspx.cs">
+      <DependentUpon>bandao-jingdian1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-jingdian1.aspx.designer.cs">
+      <DependentUpon>bandao-jingdian1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-jiudian.aspx.cs">
+      <DependentUpon>bandao-jiudian.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-jiudian.aspx.designer.cs">
+      <DependentUpon>bandao-jiudian.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-jiudian1.aspx.cs">
+      <DependentUpon>bandao-jiudian1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-jiudian1.aspx.designer.cs">
+      <DependentUpon>bandao-jiudian1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-meishi.aspx.cs">
+      <DependentUpon>bandao-meishi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-meishi.aspx.designer.cs">
+      <DependentUpon>bandao-meishi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-meishi1.aspx.cs">
+      <DependentUpon>bandao-meishi1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-meishi1.aspx.designer.cs">
+      <DependentUpon>bandao-meishi1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-xianlu1.aspx.cs">
+      <DependentUpon>bandao-xianlu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-xianlu1.aspx.designer.cs">
+      <DependentUpon>bandao-xianlu1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-xianluview.aspx.cs">
+      <DependentUpon>bandao-xianluview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-xianluview.aspx.designer.cs">
+      <DependentUpon>bandao-xianluview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\bandao-yule1.aspx.cs">
+      <DependentUpon>bandao-yule1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\bandao-yule1.aspx.designer.cs">
+      <DependentUpon>bandao-yule1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\gouwu-view.aspx.cs">
+      <DependentUpon>gouwu-view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\gouwu-view.aspx.designer.cs">
+      <DependentUpon>gouwu-view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\hudong-fabiao.aspx.cs">
+      <DependentUpon>hudong-fabiao.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\hudong-fabiao.aspx.designer.cs">
+      <DependentUpon>hudong-fabiao.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\hudong-list.aspx.cs">
+      <DependentUpon>hudong-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\hudong-list.aspx.designer.cs">
+      <DependentUpon>hudong-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\huodong-view.aspx.cs">
+      <DependentUpon>huodong-view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\huodong-view.aspx.designer.cs">
+      <DependentUpon>huodong-view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\huodong_baoming.aspx.cs">
+      <DependentUpon>huodong_baoming.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\huodong_baoming.aspx.designer.cs">
+      <DependentUpon>huodong_baoming.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\jfList.aspx.cs">
+      <DependentUpon>jfList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\jfList.aspx.designer.cs">
+      <DependentUpon>jfList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\jifen.aspx.cs">
+      <DependentUpon>jifen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\jifen.aspx.designer.cs">
+      <DependentUpon>jifen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\login_find.aspx.cs">
+      <DependentUpon>login_find.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\login_find.aspx.designer.cs">
+      <DependentUpon>login_find.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\map.aspx.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\map.aspx.designer.cs">
+      <DependentUpon>map.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\meishi-view.aspx.cs">
+      <DependentUpon>meishi-view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\meishi-view.aspx.designer.cs">
+      <DependentUpon>meishi-view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\member_collect_del.aspx.cs">
+      <DependentUpon>member_collect_del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\member_collect_del.aspx.designer.cs">
+      <DependentUpon>member_collect_del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\Member_Order_Del.aspx.cs">
+      <DependentUpon>Member_Order_Del.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\Member_Order_Del.aspx.designer.cs">
+      <DependentUpon>Member_Order_Del.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\notice-list.aspx.cs">
+      <DependentUpon>notice-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\notice-list.aspx.designer.cs">
+      <DependentUpon>notice-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\paidui.aspx.cs">
+      <DependentUpon>paidui.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\paidui.aspx.designer.cs">
+      <DependentUpon>paidui.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\RegistrationIt.aspx.cs">
+      <DependentUpon>RegistrationIt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\RegistrationIt.aspx.designer.cs">
+      <DependentUpon>RegistrationIt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\tehui-list.aspx.cs">
+      <DependentUpon>tehui-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\tehui-list.aspx.designer.cs">
+      <DependentUpon>tehui-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\tehui-view.aspx.cs">
+      <DependentUpon>tehui-view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\tehui-view.aspx.designer.cs">
+      <DependentUpon>tehui-view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\TUrl.aspx.cs">
+      <DependentUpon>TUrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\TUrl.aspx.designer.cs">
+      <DependentUpon>TUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-center.aspx.cs">
+      <DependentUpon>user-center.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-center.aspx.designer.cs">
+      <DependentUpon>user-center.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-dd.aspx.cs">
+      <DependentUpon>user-dd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-dd.aspx.designer.cs">
+      <DependentUpon>user-dd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-dd2.aspx.cs">
+      <DependentUpon>user-dd2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-dd2.aspx.designer.cs">
+      <DependentUpon>user-dd2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-gy.aspx.cs">
+      <DependentUpon>user-gy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-gy.aspx.designer.cs">
+      <DependentUpon>user-gy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-info.aspx.cs">
+      <DependentUpon>user-info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-info.aspx.designer.cs">
+      <DependentUpon>user-info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-info_Upload.aspx.cs">
+      <DependentUpon>user-info_Upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-info_Upload.aspx.designer.cs">
+      <DependentUpon>user-info_Upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-sc.aspx.cs">
+      <DependentUpon>user-sc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-sc.aspx.designer.cs">
+      <DependentUpon>user-sc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-xl.aspx.cs">
+      <DependentUpon>user-xl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-xl.aspx.designer.cs">
+      <DependentUpon>user-xl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\user-yj.aspx.cs">
+      <DependentUpon>user-yj.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\user-yj.aspx.designer.cs">
+      <DependentUpon>user-yj.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-cjwt.aspx.cs">
+      <DependentUpon>visitor-cjwt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-cjwt.aspx.designer.cs">
+      <DependentUpon>visitor-cjwt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-tsjy.aspx.cs">
+      <DependentUpon>visitor-tsjy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-tsjy.aspx.designer.cs">
+      <DependentUpon>visitor-tsjy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-tsjyview.aspx.cs">
+      <DependentUpon>visitor-tsjyview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-tsjyview.aspx.designer.cs">
+      <DependentUpon>visitor-tsjyview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-wjdc.aspx.cs">
+      <DependentUpon>visitor-wjdc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-wjdc.aspx.designer.cs">
+      <DependentUpon>visitor-wjdc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-wjdcview.aspx.cs">
+      <DependentUpon>visitor-wjdcview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-wjdcview.aspx.designer.cs">
+      <DependentUpon>visitor-wjdcview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor-zbxx.aspx.cs">
+      <DependentUpon>visitor-zbxx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor-zbxx.aspx.designer.cs">
+      <DependentUpon>visitor-zbxx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\visitor.aspx.cs">
+      <DependentUpon>visitor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\visitor.aspx.designer.cs">
+      <DependentUpon>visitor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\weather.aspx.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\weather.aspx.designer.cs">
+      <DependentUpon>weather.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\WxLogin.aspx.cs">
+      <DependentUpon>WxLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\WxLogin.aspx.designer.cs">
+      <DependentUpon>WxLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\xianlu_view.aspx.cs">
+      <DependentUpon>xianlu_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\xianlu_view.aspx.designer.cs">
+      <DependentUpon>xianlu_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\xingcheng-list.aspx.cs">
+      <DependentUpon>xingcheng-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\xingcheng-list.aspx.designer.cs">
+      <DependentUpon>xingcheng-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\yule_view.aspx.cs">
+      <DependentUpon>yule_view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\yule_view.aspx.designer.cs">
+      <DependentUpon>yule_view.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\zixun-list.aspx.cs">
+      <DependentUpon>zixun-list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\zixun-list.aspx.designer.cs">
+      <DependentUpon>zixun-list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WEB\zixun-view.aspx.cs">
+      <DependentUpon>zixun-view.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WEB\zixun-view.aspx.designer.cs">
+      <DependentUpon>zixun-view.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Adpost.YCH.BLL\Adpost.YCH.BLL.csproj">
+      <Project>{583e363b-3c5d-4111-b97a-c92fcbeb2b3c}</Project>
+      <Name>Adpost.YCH.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Adpost.YCH.Model\Adpost.YCH.Model.csproj">
+      <Project>{82b25d1a-fb54-4e31-8aa0-32d4608b735b}</Project>
+      <Name>Adpost.YCH.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\ych_icon.psd" />
+    <Content Include="images\ych_icon1.psd" />
+    <Content Include="images\ych_icon2.psd" />
+    <Content Include="CommonPage\GetVipCard.ashx" />
+    <None Include="Map\mapfiles\api-3\12\15\vssver2.scc" />
+    <None Include="Map\mapfiles\cb\mod_cb_scout\vssver2.scc" />
+    <None Include="Map\mapfiles\markers2\vssver2.scc" />
+    <None Include="Map\mapfiles\mv\vssver2.scc" />
+    <None Include="Map\mapfiles\vssver2.scc" />
+    <None Include="Properties\PublishProfiles\LOCAL.pubxml" />
+    <Content Include="WEB\hudong" />
+    <None Include="WEB\images\ych_icon.psd" />
+    <None Include="WEB\images\ych_icon1.psd" />
+    <None Include="WEB\images\ych_icon2.psd" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>26094</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

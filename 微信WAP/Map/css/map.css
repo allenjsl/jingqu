@@ -1,0 +1,109 @@
+﻿.box{ width:375px; height:265px; background:url(images/bg.png) no-repeat top left; position:absolute;}
+	.view_title{ position:absolute; width:156px; height:47px; background:url(images/icon.png) no-repeat; bottom:55px; left:-6px;}
+	.view_title p{ width:110px; height:44px; text-align:center; line-height:44px; color:#fff; padding:0px; margin:0px;}
+	
+	.close_btn{ width:17px; height:17px; position:absolute; right:18px; top:10px; background:url(images/base_z209e63.png) no-repeat 0 -56px; cursor:pointer;}
+
+	.close_btn:hover{ background:url(images/base_z209e63.png) no-repeat 0 -82px;}
+	
+	.pic_box{ padding:10px; margin:15px; border:1px solid #8A8A8A; float:left; width:120px; height:110px;}
+	.pic_box img{ width:120px;}
+	
+	.intro{ float:right; width:180px; padding-top:15px; height:180px; overflow:hidden; padding-right:15px;}
+	.intro p{ color:#777; line-height:20px; font-size:13px; }
+
+
+.map_box{ width:100%; height:120px; overflow:hidden; background:#fff; padding:15px 0px;position:absolute;bottom: 0px; _bottom: -20px; left: 0px; _display:inline;}
+.map_tel{ float:left; width:30%; text-align:center;}
+.map_tel img{ width:80%; max-width:85px; _width:20%;}
+.map_tel p{ line-height:30px; color:#000; font-size:12px;}
+.map_main{ float:left; width:65%;}
+.map_main img{ width:40%; float:left; margin-right:10px; max-height:113px; _width:40%;}
+.map_main h2{ font-size:14px; font-weight:normal; color:#000; margin-bottom:5px;}
+.map_main p{ line-height:18px; color:#999999; font-size:12px;}
+/*根据效果图新增*/
+.clickdetail {
+	display: none;
+	position: fixed; bottom: 0; left: 0;
+	width: 100%; height: 108px;
+	background: #fff;
+}
+.clickdetail h3 {
+	position: relative;
+	padding: 0 15px;
+	line-height: 65px;
+	border-top: 1px solid #cbcbcb;
+	border-bottom: 1px solid #cbcbcb;
+}
+a.cd-active {
+	position: absolute; top: 0; right: 20px;
+	color: #4c91f8;
+}
+.ck-list {
+	width: 100%;
+	height: 42px;
+	background: #fff;
+	border-top: 1px solid #cbcbcb;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.ck-list li {
+	width: 33.3%;
+	height: 42px;
+	line-height: 42px; color: #666; font-weight: normal; text-align: center;
+	float: left;
+	cursor: pointer;
+	box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border-right: 1px solid #cbcbcb;
+}
+.ck-list li.one {
+	width: 100%; 
+	border-right: none;
+}
+.ck-list li:last-child {
+	border-right: none;
+}
+.ck-list .icon {
+	display: inline-block;
+	width: 28px;
+	height: 36px;
+	margin-top: 6px;
+	vertical-align: middle;
+}
+
+.ck-list .icon_navi {
+	width: 33px;
+	margin-left: -16px;
+}
+.icon_gowhere {
+	background: url("../images/icon_gowhere.png") no-repeat 7px 6px;
+	background-size: 9px 13px;
+}
+.icon_360 {
+	background: url("../images/icon_360.png") no-repeat 3px 8px;
+	background-size: 19.5px 9px;
+}
+.icon_360_gray {
+	background: url("../images/icon_360_gray.png") no-repeat 3px 8px;
+	background-size: 19.5px 9px;
+}
+.icon_voice {
+	background: url("../images/icon_voice.png") no-repeat 7px 7px;
+	background-size: 12px 13px;
+}
+.icon_voice_gray {
+	background: url("../images/icon_voice_gray.png") no-repeat 7px 7px;
+	background-size: 12px 13px;
+}
+.toolBar li a {
+	color: #666;
+}
+.audio-box {
+    display: none;
+    width: 1px;
+    height: 1px;
+}

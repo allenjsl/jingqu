@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Reset
+理念：清除和重置是紧密不可分的
+特色：1.适应中文 2.基于手机端
+维护：如摄(23360147@qq.com) */
+body, div, p, ul, ol, li, textarea, form, input, h1, h2, h3, h4, h5, dl, dt, dd, img, section, article, aside, header, footer, nav, dialog, figure, hgroup{
+	margin:0;
+	padding:0;
+}
+html, body{
+	height:100%;
+}
+body{
+	background-color:#f8f8f8;/*背景颜色*/
+	-webkit-background-size:50px auto;
+	font-family:"\5FAE\8F6F\96C5\9ED1", Helvetica;
+	min-width:320px;
+	-webkit-text-size-adjust:none;
+	font-size: 14px;
+	color:#777;
+	overflow-x:hidden;
+}
+input, button, select, textarea{
+	/* font-size:13px; */
+	font-family:"\5FAE\8F6F\96C5\9ED1", Helvetica;
+	color:#383838;
+}
+ul, ol, li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#383838;
+}
+
+img{
+	border:0;
+}
+section, article, aside, header, footer, nav, dialog, figure, hgroup{
+	display:block;
+}
+i, cite, em, var, address{
+	font-style:normal;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+.clearfix{*zoom:1; /* for IE6-7 */}
+.clearfix:before,.clearfix:after{display:table;line-height:0;content:"";}
+.clearfix:after{clear:both;}
+.posR {position: relative;}
+.posA { position: absolute;}
+/*公用css*/
+.borderBox {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.tri {/*箭头向下*/
+    content: "";
+    display: block;
+    position: absolute;
+    height:0;
+    width:0;
+    overflow: hidden;
+    border-color:transparent transparent #fff transparent;
+    border-style:dashed dashed solid dashed;
+    border-width:7px;
+}
+/*字体css*/
+.bold{font-weight:bolder;}
+.normal{font-weight:normal;}
+.font8{font-size:8px;}
+.font10{font-size:10px;}
+.font12{font-size:12px;}
+.font16{font-size:16px;}
+.font18{font-size:18px;}
+.font24{font-size:24px;}

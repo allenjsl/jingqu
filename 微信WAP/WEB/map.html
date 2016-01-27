@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<title>阳澄湖半岛旅游度假村</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<script src="../js/zepto.min.js" type="text/javascript"></script>
+</head>
+<body>
+<!--header begin-->
+<header class="header center">
+	<div class="hd-back font16">
+		<a href="javascript:void(0);">
+			
+		</a>
+	</div>
+	<div class="hd-title font24 bold">阳澄湖半岛度假区</div>
+	<a class="hd-user icon" href="login.html"></a>
+</header>
+<!--header end-->
+<!--outer-wrap begin-->
+<div class="outer-wrap borderBox">
+	<!--nav begin-->
+	<!--load begin-->
+	
+	<!--load end-->
+	<!--load注释里面内容请开发时换用include引用-->
+	<!--nav end-->
+
+		<div class="index-class">
+        	<div class="about_search_box">
+                <div class="tabPanel">
+                
+                    <div class="panes">
+                        <div class="pane" style="display:block;">
+                            <span><input type="text" class="search_text"></span>
+                            <span class="return_img"></span>
+                            <span><input type="text" class="search_text" value="阳澄湖半岛" onBlur="if(this.value==''){this.value='阳澄湖半岛'};" onFocus="if(this.value=='阳澄湖半岛'){this.value=''};" ></span>                        
+                            <span class="span_search"><input type="button" class="return_button" value="搜索"></span>
+                            <div style="clear:both;"></div>
+                        </div>
+                        <div class="pane">
+                            <span><input type="text" class="search_text"></span>
+                            <span class="return_img"></span>
+                            <span><input type="text" class="search_text" value="阳澄湖半岛" onBlur="if(this.value==''){this.value='阳澄湖半岛'};" onFocus="if(this.value=='阳澄湖半岛'){this.value=''};" ></span>                        
+                            <span class="span_search"><input type="button" class="return_button" value="搜索"></span>
+                            <div style="clear:both;"></div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="tabPane2">
+                        <ul>
+                            <li class="hit">公交</li>
+                            <li>驾车</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        	
+            <div style="map_box">
+            	<img src="../images/xny.jpg">
+            </div>
+        </div>		
+
+	<!--inner-wrap end-->
+</div>
+<!--outer-wrap end-->
+<script src="../js/utils.js" type="text/javascript"></script>
+
+<script src="../js/jquery-1.6.1.min.js"></script>
+<!--选项卡-->
+<script type="text/javascript">
+$(function(){	
+	$('.tabPanel ul li').click(function(){
+		$(this).addClass('hit').siblings().removeClass('hit');
+		$('.panes>div:eq('+$(this).index()+')').show().siblings().hide();	
+	})
+})
+</script>
+</body>
+</html>
