@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>引导页</title>
+
+</head>
+<style>
+html,body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea { margin:0;padding:0; font-weight:normal; }
+body { font-size:14px; font-family:"微软雅黑"; color:#777;}
+.box{ width:1000px; margin:0 auto; z-index:10;}
+.box-wz,.box-ew{ width:100%; list-style:none;}
+.box-wz li{ height:100px; float:left; border-radius:3px; width:200px; margin:0px 20px;}
+.box-wz li a{ display:block; width:200px; height:100px; border-radius:3px; line-height:100px; text-align:center; color:#fff; text-decoration:none; font-size:18px; font-weight:bold; letter-spacing:2px;}
+.li-1{ 
+	border:1px solid #89DE21; 
+	background:#6CC829;background: 
+	-webkit-gradient(linear, left top, left bottom, from(#B4F25F), to(#6CC829));
+	background: -moz-linear-gradient(top,  #B4F25F,  #6CC829);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=’#B4F25F, endColorstr=’#6CC829);
+	}
+.li-2{ 
+	border:1px solid #039DBC; 
+	background:#00C1E9;background: 
+	-webkit-gradient(linear, left top, left bottom, from(#15CEF7), to(#05ADCE));
+	background: -moz-linear-gradient(top,  #15CEF7,  #05ADCE);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=’#15CEF7, endColorstr=’#05ADCE);
+	}
+.li-3{ 
+	border:1px solid #03A7A7; 
+	background:#66CCCC;background: 
+	-webkit-gradient(linear, left top, left bottom, from(#66CCCC), to(#009999));
+	background: -moz-linear-gradient(top,  #66CCCC,  #009999);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=’#66CCCC, endColorstr=’#009999);
+	}	
+.li-4{ 
+	border:1px solid #339933; 
+	background:#66CCCC;background: 
+	-webkit-gradient(linear, left top, left bottom, from(#03B97E), to(#009966));
+	background: -moz-linear-gradient(top,  #03B97E,  #009966);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=’#03B97E, endColorstr=’#009966);
+	}
+.box-ew{ margin-top:50px;}
+.box-ew li{ float:left; border-radius:3px; width:200px; margin:0px 20px;}
+.box-ew li p{ height:30px; line-height:30px; font-size:14px; text-align:center;}
+.box-ew li img{ width:200px;}
+</style>
+<body style="background:url(images/banner03.jpg) no-repeat top center;">
+<div class="box" >
+	<ul class="box-wz">
+    	<li><a href="http://ychp.com.cn" target="_blank" class="li-1">体验网</a></li>
+        <li><a href="http://zw.ychp.com.cn/" target="_blank" class="li-2">政务网</a></li>
+        <li><a href="http://202.102.25.156/Login.aspx"  target="_blank" class="li-3">管控平台</a></li>
+        <li><a href="http://zx.ychp.com.cn" target="_blank" class="li-4">咨询系统</a></li>
+    </ul>
+    <div style="clear:both;"></div>
+    <ul class="box-ew">
+    	<li><img src="images/app_ios.jpg" /><p>官方APP苹果版</p></li>
+        <li><img src="images/app_android.png" /><p>官方APP安卓版</p></li>
+        <li><img src="images/app_wap.jpg" /><p>阳澄湖WAP版</p></li>
+        <li><img src="images/app_weixin.jpg" /><p>阳澄湖微信版</p></li>
+    </ul>
+<div style="clear:both;"></div>
+</div>
+
+</body>
+<script src="js/jquery1.42.min.js"></script>
+<script>
+$(document).ready(function () {
+	$(window).resize(function () {
+		$(".box").css({
+			"position": "absolute",
+			"left": ($(window).width() - $(".box").outerWidth()) / 2,
+			"top": ($(window).height() - $(".box").outerHeight()) / 2
+		});
+	})
+	$(window).resize();
+});
+
+</script>
+</html>
