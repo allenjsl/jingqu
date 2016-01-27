@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+html,body, div, address, blockquote, iframe, ul, ol, dl, dt, dd, li, dl, h1, h2, h3, h4, h5, h6, p, pre, table, caption, th, td, form, legend, fieldset, input, button, select, textarea { margin:0;padding:0; }
+body { font-size:14px; font-family:"微软雅黑"; color:#646464; overflow-y:hidden}
+#AuthCode1 table tbody tr td span{ display:none}
+#AuthCode1 table tbody tr td table tbody tr td input{margin-top: 10px;}
+#AuthCode1 table tbody tr td table tbody tr td img{margin-top: 10px;}
+ul{ list-style:none;}
+li { vertical-align:bottom; zoom:1;}
+img { border:0;vertical-align:bottom; -ms-interpolation-mode: bicubic; }
+a { text-decoration:none; outline:none; }
+a:hover{ text-decoration:none;}
+.left{ float:left;}
+.right{ float:right;}
+
+/* 本例子css */
+	.qunar { width: 100%; overflow: hidden; }
+	.qunar .e_pic_wrap { z-index: 1; white-space: nowrap; width: 100%;  }
+	.qunar .e_pic_wrap li { display: inline; width: 100%;  overflow: hidden; }
+	/*.qunar .e_bg_flt { position: absolute; right: 0; top: 0; width: 270px; height: 1000px; background: #000; filter: alpha(opacity=50); -moz-opacity: .5; opacity: .5; z-index: 10; }*/
+	.qunar .e_flt_inf { position: absolute; right: 165px; top: 25%; width: 250px; height: 125px; overflow: hidden; z-index: 20; color: #fff; white-space: normal; word-wrap: break-word; background:#00C1E9; }
+	.qunar .e_flt_inf h2 { font: 18px/25px "微软雅黑"; }
+	.qunar .e_flt_inf h3 { font: 16px/22px "微软雅黑"; }
+	.qunar .e_flt_inf h3 a, .qunar .e_flt_inf h2 a { color: #fff; }
+	.qunar .e_flt_inf .t_info { line-height: 20px; height: 84px; overflow: hidden; }
+	.qunar .e_flt_inf .t_info a { color: #fff; }
+	.qunar .e_flt_inf .t_info .l_view { background: url(images/ico_p1.png) no-repeat scroll -120px 0; color: #fff; width: 39px; height: 14px; line-height: 14px; padding: 0 2px; display: inline-block; }
+	.qunar .e_sep { color: #81d6d3; position: absolute; bottom: 20px; right: 20px; width: 235px; z-index: 20; }
+	.qunar .e_sep a { color: #81d6d3; }
+
+
+	.qunar .prev, .qunar .next { position: absolute; z-index: 30; display: block; }
+	.qunar .prev { top: 93px; left: 10px; }
+	.qunar .next { top: 93px; right: 10px; }
+	.qunar .prev a, .qunar .next a { display: block; width: 25px; height: 32px; overflow: hidden; background: url(images/ico_prevnext.png) no-repeat scroll 0 0; _background-image: url(images/ico_prevnext_ie6.png); }
+	.qunar .prev a { background-position: 0 0; }
+	.qunar .prev a:hover { background-position: 0 -40px; }
+	.qunar .next a { background-position: 0 -80px; }
+	.qunar .next a:hover { background-position: 0 -120px; }
+
+
+
+.nav{ width:100% !important; height:125px; position:absolute; top:43%; left:0%; z-index:9}
+.nav_logo{ height:125px; width:285px;}
+.nav_btn{ width:165px; height:125px; background:url(../images/index_btn1.jpg) no-repeat; cursor:pointer;}
+.nav_btn1{ width:165px; height:125px; background:#00BFDB;}
+
